@@ -5,16 +5,18 @@
             "use": "@vercel/node"
         }
     ],
+    "rewrites": [
+    {
+      "source": "/static/(.*)",
+      "destination": "/src/img/$1"
+    }
+      ],
     "routes": [
         {
             "handle": "filesystem"
         },
         {
             "src": "/(.*)",
-            "dest": "server.js"
-        },
-        {
-            "src": "/api/(.*)",
             "dest": "server.js"
         }
     ]

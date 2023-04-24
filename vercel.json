@@ -5,6 +5,14 @@
             "use": "@vercel/node"
         }
     ],
-
-  "cleanUrls": true
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
+        },
+        {
+            "src": "/test",
+            "dest": "http://test.com"
+        }
+    ]
 }

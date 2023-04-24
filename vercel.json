@@ -11,7 +11,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "static/coin.png"
+            "dest": ".vercel_build_output/static/coin.png"
         },
         {
             "src": "/api/(.*)",

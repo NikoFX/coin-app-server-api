@@ -8,7 +8,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "static/coin.png"
+            "dest": "./static/coin.png"
         }
     ]
 }

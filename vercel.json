@@ -7,8 +7,8 @@
     ],
     "routes": [
         {
-            "src": "/img/(.*)",
-            "dest": "/src/img/(.*)"
+            "src": "/img",
+            "dest": "/src/img/coin.png"
         },
         {
             "src": "/api/(.*)",

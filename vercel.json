@@ -10,11 +10,11 @@
             "handle": "filesystem"
         },
         {
-            "src": "/static/(.*)",
+            "src": "/(.*)",
             "dest": "/static/$1"
         },
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "server.js"
         }
     ]

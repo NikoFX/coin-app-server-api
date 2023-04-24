@@ -7,11 +7,11 @@
     ],
     "routes": [
         {
-            "src": "/img",
-            "dest": "/src/img/coin.png"
+            "src": "/img/(.*)",
+            "dest": "/src/img/(.*)"
         },
         {
-            "src": "/(.*)",
+            "src": "/api/(.*)",
             "dest": "server.js"
         }
     ]

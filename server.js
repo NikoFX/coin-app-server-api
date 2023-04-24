@@ -53,7 +53,7 @@ app.get('/api/description/:id', (req, res) => {
 })
 
 app.get('/api/src/img/:imgName', (req, res) => {
-    res.send(`/src/img/${req.params.imgName}.png`)
+    res.sendFile(`/src/img/${req.params.imgName}.png`)
 })
 
 app.listen(8080, () => {

@@ -3,10 +3,6 @@
         {
             "src": "server.js",
             "use": "@vercel/node"
-        },
-        {
-            "src": "/public",
-            "use": "@vercel/node"
         }
     ],
     "routes": [
@@ -14,5 +10,11 @@
             "src": "/api/(.*)",
             "dest": "server.js"
         }
-    ]
+    ],
+    "rewrites": [
+    {
+      "source": "/static/(.*)",
+      "destination": "/public/$1"
+    }
+  ]
 }

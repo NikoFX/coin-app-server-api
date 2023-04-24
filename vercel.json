@@ -13,8 +13,8 @@
     ],
     "rewrites": [
     {
-      "source": "/img/(.*)",
-      "destination": "src/img/$1"
+      "source": "/img/:match*",
+      "destination": "/src/img/:match*"
     }
   ]
   }

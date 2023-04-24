@@ -14,7 +14,7 @@
     "rewrites": [
     {
       "source": "/img/(.*)",
-      "destination": "crc/img/$1"
+      "destination": "src/img/$1"
     }
   ]
   }

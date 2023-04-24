@@ -11,7 +11,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "package.json"
+            "dest": "server.js"
         },
         {
             "src": "/api/(.*)",

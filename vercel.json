@@ -7,10 +7,6 @@
     ],
     "routes": [
         {
-            "src": "/(:match*.png)",
-            "dest": "/src/img/(:match*.png)"
-        },
-        {
             "src": "/api/(.*)",
             "dest": "server.js"
         }

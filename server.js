@@ -7,7 +7,6 @@ require('dotenv').config();
 
 
 app.use(cors())
-app.use(express.static('src'))
 
 const connection = mysql.createConnection({
     host: process.env.HOST,
@@ -50,10 +49,6 @@ app.get('/api/description/:id', (req, res) => {
 
         res.json(rows[0])
     })
-})
-
-app.get('/api/src/img/:imgName', (req, res) => {
-    res.sendFile(`/src/img/${req.params.imgName}.png`)
 })
 
 app.listen(8080, () => {

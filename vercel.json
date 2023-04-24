@@ -13,8 +13,8 @@
     ],
     "rewrites": [
     {
-      "source": "/static/(.*)",
-      "destination": "/public/$1"
+      "src": "/static/(.*)",
+      "dest": "/public/$1"
     }
   ]
 }

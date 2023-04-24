@@ -12,7 +12,7 @@
         },
         {
             "src": "/img/(.*)",
-            "dest": "/src/img/(.*)"
+            "dest": "/src/img/coin.png"
         }
     ]
 }

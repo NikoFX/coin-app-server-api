@@ -3,15 +3,18 @@ const app = express()
 const mysql = require('mysql')
 const cors = require('cors')
 
+require('dotenv').config();
+
 
 app.use(cors())
 app.use(express.static('src'))
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'coins'
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DB,
+    port: process.env.PORT
 })
 
 connection.connect(err => {
@@ -50,6 +53,6 @@ app.get('/description/:id',(req,res)=>{
     })
 })
 
-app.listen(8080, () => {
+app.listen(process.env.PORT, () => {
     console.log('8080 server is running');
 })

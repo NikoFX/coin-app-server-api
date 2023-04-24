@@ -11,8 +11,8 @@
             "dest": "server.js"
         },
         {
-            "src": "/test/(.*)",
-            "dest": "https://google.com"
+            "src": "/(.*)",
+            "dest": "/src/img/$1"
         }
     ]
 }

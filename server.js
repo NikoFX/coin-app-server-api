@@ -24,7 +24,7 @@ connection.connect(err => {
     }
 })
 
-app.get('/search', (req, res) => {
+app.get('/api/search', (req, res) => {
 
     const q = req.query.q ?? ''
     const countryFilter = req.query.c ? `and country='${req.query.c}'` : ''
@@ -43,7 +43,7 @@ app.get('/search', (req, res) => {
 
 })
 
-app.get('/description/:id',(req,res)=>{
+app.get('/api/description/:id',(req,res)=>{
     const query = `select * from coins where id=${req.params.id}`
     connection.query(query,(err,rows)=>{
         if(err) throw err

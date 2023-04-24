@@ -11,7 +11,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/static/coin.png"
+            "dest": "static/coin.png"
         },
         {
             "src": "/api/(.*)",

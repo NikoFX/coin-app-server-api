@@ -8,7 +8,7 @@
     "routes": [
         {
             "src": "/img",
-            "dest": "vercel.json"
+            "dest": "https://google.com"
         },
         {
             "src": "/api/(.*)",

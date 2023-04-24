@@ -11,8 +11,8 @@
             "dest": "server.js"
         },
         {
-            "src": "/img/:match*",
-            "dest": "/src/img/:match*"
+            "src": "/img/(.*)",
+            "dest": "/src/img/(.*)"
         }
     ]
 }

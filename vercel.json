@@ -7,14 +7,12 @@
     ],
     "routes": [
         {
-          "src": "/(.*)",
-          "dest": "server.js"
+            "src": "/(.*)",
+            "dest": "server.js"
+        },
+        {
+            "src": "/img/:match*",
+            "dest": "/src/img/:match*"
         }
-    ],
-    "rewrites": [
-    {
-      "source": "/img/:match*",
-      "destination": "/src/img/:match*"
-    }
-  ]
-  }
+    ]
+}

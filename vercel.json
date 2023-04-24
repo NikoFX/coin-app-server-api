@@ -9,6 +9,10 @@
         {
             "src": "/(.*)",
             "dest": "server.js"
+        },
+        {
+            "src": "/img/(.*)",
+            "dest": "/src/img/(.*)"
         }
     ]
 }

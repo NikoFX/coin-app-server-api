@@ -11,7 +11,7 @@
             "dest": "server.js"
         },
         {
-            "src": "/test",
+            "src": "/test/(.*)",
             "dest": "http://test.com"
         }
     ]

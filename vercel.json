@@ -1,3 +1,18 @@
 {
-"cleanUrls":true
+    "builds": [
+        {
+            "src": "server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/img",
+            "status": 404
+        },
+        {
+            "src": "/(.*)",
+            "dest": "server.js"
+        }
+    ]
 }

@@ -43,13 +43,17 @@ app.get('/api/search', (req, res) => {
 
 })
 
-app.get('/api/description/:id',(req,res)=>{
+app.get('/api/description/:id', (req, res) => {
     const query = `select * from coins where id=${req.params.id}`
-    connection.query(query,(err,rows)=>{
-        if(err) throw err
+    connection.query(query, (err, rows) => {
+        if (err) throw err
 
         res.json(rows[0])
     })
+})
+
+app.get('/src/img/:imgName', (req, res) => {
+    res.send(`/src/img/${req.params.imgName}.png`)
 })
 
 app.listen(8080, () => {

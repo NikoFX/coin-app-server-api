@@ -47,21 +47,9 @@ Example request:
 https://coin-app-server-api.vercel.app/api/search?c=canada&yTo=1980
 ```
 
-GET "/api/"
-This endpoint allows users to retrieve a specific collection by received ID. To retrieve a collection, send a GET request to "collection/:id", where :id is the ID of the collection you want to retrieve.
+GET "/api/description/:id"
+This endpoint allows users to retrieve a specific coin information by ID.
 
-Example response:
-
-```
-{
-    "id": 51,
-    "title": "My collection",
-    "movie": [
-        "tt0068646",
-        "tt0098019"
-    ]
-}
-```
 
 ## Development setup
 

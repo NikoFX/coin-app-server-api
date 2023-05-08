@@ -21,6 +21,10 @@ Coins App API is a RESTful web service that provides access to a collection of c
 ## Usage
 To use this API application, you will need to have Node.js and npm installed on your machine. Once you have those installed, you can run the following commands to get started:
 
+Send all data requests to:
+```
+https://coin-app-server-api.vercel.app/api/
+```
 
 ## API Endpoints
 
@@ -43,7 +47,7 @@ Example request:
 https://coin-app-server-api.vercel.app/api/search?c=canada&yTo=1980
 ```
 
-GET "/collection/:id"
+GET "/api/"
 This endpoint allows users to retrieve a specific collection by received ID. To retrieve a collection, send a GET request to "collection/:id", where :id is the ID of the collection you want to retrieve.
 
 Example response:

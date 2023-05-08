@@ -29,9 +29,14 @@ https://coin-app-server-api.vercel.app/api/
 ## API Endpoints
 
 GET "/api/search"
+
 The endpoint allows users to retrieve list of coins. To retrieve the list of coins.
 
-### Parameters 
+GET "/api/description/:id"
+
+The endpoint allows users to retrieve a specific coin information by ID.
+
+### Parameters for search
 
 - q (optional) search by coin name
 - c (optional) country
@@ -46,9 +51,6 @@ Example request:
 ```
 https://coin-app-server-api.vercel.app/api/search?c=canada&yTo=1980
 ```
-
-GET "/api/description/:id"
-This endpoint allows users to retrieve a specific coin information by ID.
 
 
 ## Development setup

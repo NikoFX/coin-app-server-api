@@ -18,13 +18,17 @@ Coins App API is a RESTful web service that provides access to a collection of c
 - dotenv
 - body-parser
 
-
-
-
-## Development setup
+## Usage
 To use this API application, you will need to have Node.js and npm installed on your machine. Once you have those installed, you can run the following commands to get started:
 
-## Parameters 
+
+## API Endpoints
+
+GET "/api/search"
+The endpoint allows users to retrieve list of coins. To retrieve the list of coins.
+
+### Parameters 
+
 - q (optional) search by coin name
 - c (optional) country
 - t (optional) type of coin
@@ -33,26 +37,10 @@ To use this API application, you will need to have Node.js and npm installed on 
 - pFrom & pTo (otional) price range
 - yFrom & yTo (otional) year range
 
-```
-npm install
-nodemon server
-```
 
-GET "/api/search"
-The endpoint allows users to retrieve list of coins. To retrieve the list of coins.
-Lis
-
-Example request body:
-
+Example request:
 ```
-{
- "title": "My collection",
- "movies": [
- "t3248924",
- "t4450678",
- "t7709609"
- ]
-}
+https://coin-app-server-api.vercel.app/api/search?c=canada&yTo=1980
 ```
 
 GET "/collection/:id"
@@ -69,6 +57,13 @@ Example response:
         "tt0098019"
     ]
 }
+```
+
+## Development setup
+
+```
+npm install
+nodemon server
 ```
 
 ## Meta

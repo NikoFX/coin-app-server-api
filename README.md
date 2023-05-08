@@ -24,13 +24,23 @@ Coins App API is a RESTful web service that provides access to a collection of c
 ## Development setup
 To use this API application, you will need to have Node.js and npm installed on your machine. Once you have those installed, you can run the following commands to get started:
 
+## Parameters 
+- q (optional) search by coin name
+- c (optional) country
+- t (optional) type of coin
+- m (optional) metal of coin
+- qt (optional) quality of coin
+- pFrom & pTo (otional) price range
+- yFrom & yTo (otional) year range
+
 ```
 npm install
-nodemon index
+nodemon server
 ```
 
 GET "/api/search"
-The endpoint allows users to retrieve list of coins. To retrieve a collection, send a GET request to "collection/:id", where :id is the ID of the collection you want to retrieve.
+The endpoint allows users to retrieve list of coins. To retrieve the list of coins.
+Lis
 
 Example request body:
 
